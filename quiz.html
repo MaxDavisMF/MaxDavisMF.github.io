@@ -4,20 +4,38 @@ Computer sience quiz
 </head>
 <body>
 <h1>Computer Sience Quiz</h1>
-<script>
-function PreQuiz(){
-score
+
 <p>
-  <label>
-    1. Is RAM Volatile?<br>
-    <select id="Q1">
-      <option value="correct">Yes</option>
-      <option value="wrong">No</option>
-    </select>
-  </label>
+    1. Is RAM Volatile?
+</p>
+<p>
+	<label>
+	<label><input type="radio" name="answer" value="yes" id="correct"></label><br>
+	Yes
+	</label>
+</p>
+<p>
+	<label>
+	<label><input type="radio" name="answer" value="no"></label><br>
+	no
+	</label>
+	</p>
+
+  <p>
   <button id="button">
   Submit
 </button>
-  <Script>
-  
 </p>
+<br>
+<p id="comment1"> </p>
+  <Script>
+  function q1mark()
+  {
+  comment1.textContent = "Wrong! better luck next time!";
+  if (correct.checked) 
+	{
+  comment1.textContent = "Correct! Well Done!;
+	}
+  }
+  button.onclick = q1mark
+</script>
