@@ -44,18 +44,18 @@ Computer sience quiz
 	
 	
 	<p>
-    1. Who invented the computer?
+    2. Who invented the computer?
 </p>
 <p>
 	<label>
 	<label><input type="radio" name="answer" value="Charles Babbage" id="correcttwo"></label><br>
-	Yes
+	Charles Babbage
 	</label>
 </p>
 <p>
 	<label>
 	<label><input type="radio" name="answer" value="James Starrage"></label><br>
-	no
+	James Starrage
 	</label>
 	</p>
 
@@ -78,3 +78,116 @@ Computer sience quiz
   buttontwo.onclick = qtwomark
 </script>
 
+
+	
+	
+	
+		<p>
+    3. What is the name of the most powerful super computer?
+</p>
+<p>
+	<label>
+	<label><input type="radio" name="answer" value="Summit" id="correctthree"></label><br>
+	Summit
+	</label>
+</p>
+<p>
+	<label>
+	<label><input type="radio" name="answer" value=" Sunway TaihuLight"></label><br>
+	 Sunway TaihuLight
+	</label>
+	</p>
+
+  <p>
+  <button id="buttonthree">
+  Submit
+</button>
+</p>
+<br>
+<p id="commentthree">.... </p>
+  <Script>
+  function qthreemark ()
+  {
+  commentthree.textContent = "Wrong! better luck next time!";
+  if (correctthree.checked) 
+	{
+  commentthree.textContent = "Correct! Well Done!;
+	}
+  }
+  buttonthree.onclick = qthreemark
+</script>
+	
+	
+	
+		<p>
+    4. Which country owns the most powerful super computer?
+</p>
+<p>
+	<label>
+	<label><input type="radio" name="answer" value="China" ></label><br>
+	China
+	</label>
+</p>
+<p>
+	<label>
+	<label><input type="radio" name="answer" value="USA" id="correctfour"></label><br>
+	USA
+	</label>
+	</p>
+
+  <p>
+  <button id="buttonfour">
+  Submit
+</button>
+</p>
+<br>
+<p id="commentfour">.... </p>
+  <Script>
+  function qfourmark ()
+  {
+  commentfour.textContent = "Wrong! better luck next time!";
+  if (correctfour.checked) 
+	{
+  commentfour.textContent = "Correct! Well Done!;
+	}
+  }
+  buttonfour.onclick = qfourmark
+</script>
+	
+	
+	
+	
+			<p>
+    5. Who invented the internet?
+</p>
+<p>
+	<label>
+	<label><input type="radio" name="answer" value="Bill Keller" ></label><br>
+	Bill Keller
+	</label>
+</p>
+<p>
+	<label>
+	<label><input type="radio" name="answer" value="Vint Cerf" id="correctfive"></label><br>
+	Vint Cerf
+	</label>
+	</p>
+
+  <p>
+  <button id="buttonfive">
+  Submit
+</button>
+</p>
+<br>
+<p id="commentfive">.... </p>
+  <Script>
+  function qfivemark ()
+  {
+  commentfive.textContent = "Wrong! better luck next time!";
+  if (correctfive.checked) 
+	{
+  commentfive.textContent = "Correct! Well Done!;
+	}
+  }
+  buttonfive.onclick = qfivemark
+</script>
