@@ -10,7 +10,7 @@ Computer sience quiz
 </p>
 <p>
 	<label>
-	<label><input type="radio" name="answer" value="yes" id="correct"></label><br>
+	<label><input type="radio" name="answer" value="yes" id="correctone"></label><br>
 	Yes
 	</label>
 </p>
@@ -32,10 +32,49 @@ Computer sience quiz
   function qonemark ()
   {
   commentone.textContent = "Wrong! better luck next time!";
-  if (correct.checked) 
+  if (correctone.checked) 
 	{
   commentone.textContent = "Correct! Well Done!;
 	}
   }
   buttonone.onclick = qonemark
 </script>
+	
+	
+	
+	
+	<p>
+    1. Who invented the computer?
+</p>
+<p>
+	<label>
+	<label><input type="radio" name="answer" value="Charles Babbage" id="correcttwo"></label><br>
+	Yes
+	</label>
+</p>
+<p>
+	<label>
+	<label><input type="radio" name="answer" value="James Starrage"></label><br>
+	no
+	</label>
+	</p>
+
+  <p>
+  <button id="buttontwo">
+  Submit
+</button>
+</p>
+<br>
+<p id="commenttwo">.... </p>
+  <Script>
+  function qtwomark ()
+  {
+  commenttwo.textContent = "Wrong! better luck next time!";
+  if (correcttwo.checked) 
+	{
+  commenttwo.textContent = "Correct! Well Done!;
+	}
+  }
+  buttontwo.onclick = qtwomark
+</script>
+
