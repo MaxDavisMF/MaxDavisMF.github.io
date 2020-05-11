@@ -37,7 +37,7 @@ Computer sience quiz
   commentone.textContent = "Correct! Well Done!;
 	}
   }
-  buttonone.onclick = qonemark
+  buttonone.onClick = qonemark
 </script>
 	
 	
@@ -190,4 +190,42 @@ Computer sience quiz
 	}
   }
   buttonfive.onclick = qfivemark
+</script>
+
+	
+	
+	
+			<p>
+    6. In which year was the internet invented??
+</p>
+<p>
+	<label>
+	<label><input type="radio" name="answer" value="1983" id="correctsix"></label><br>
+	1983
+	</label>
+</p>
+<p>
+	<label>
+	<label><input type="radio" name="answer" value="1979"></label><br>
+	1979
+	</label>
+	</p>
+
+  <p>
+  <button id="buttontsix">
+  Submit
+</button>
+</p>
+<br>
+<p id="commentsix">.... </p>
+  <Script>
+  function qsixmark ()
+  {
+  commentsix.textContent = "Wrong! better luck next time!";
+  if (correctsix.checked) 
+	{
+  commentsix.textContent = "Correct! Well Done!;
+	}
+  }
+  buttonsix.onclick = qsixmark
 </script>
