@@ -3,7 +3,8 @@
 Computer sience quiz
 </head>
 <body>
-<h1>Computer Sience Quiz 3</h1>
+<h1>Computer Sience Quiz 4</h1>
+	<h4>Please only submit each answer once. Your score is shown at the bottom of the quiz</h4>
 
 <p>
     1. Is RAM Volatile?
@@ -31,10 +32,12 @@ Computer sience quiz
   <Script>
   function qonemark ()
 	  {
+  totalscore.textContent = "0"
   commentone.textContent = "Wrong! better luck next time!";
   if (correctone.checked) 
 	{
-  commentone.textContent = "Correct! Well Done!";
+  commentone.textContent = "Correct! Well Done!"
+  score.textContent = Number(score.textContent) + 1;
 	}
   }
   buttonone.onclick = qonemark;
@@ -72,7 +75,8 @@ Computer sience quiz
   commenttwo.textContent = "Wrong! better luck next time!";
   if (correcttwo.checked) 
 	{
-  commenttwo.textContent = "Correct! Well Done!";
+  commenttwo.textContent = "Correct! Well Done!"
+  score.textContent = Number(score.textContent) + 1;
 	}
   }
   buttontwo.onclick = qtwomark;
@@ -373,6 +377,7 @@ Computer sience quiz
   function qtenmark ()
   {
   commentten.textContent = "Wrong! better luck next time!";
+	  
   if (correctten.checked) 
 	{
   commentten.textContent = "Correct! Well Done!";
@@ -380,3 +385,7 @@ Computer sience quiz
   }
   buttonten.onclick = qtennmark;
 </script>
+
+	<h2>Congratulations on finishing the quiz! You scored <span id="totalscore">...</span> out of 10 </h4>	
+	
+	
