@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <Head>
-Computer sience quiz 8
+Computer sience quiz 9
 </head>
 <body>
 <h1>Computer Sience Quiz</h1>
@@ -284,7 +284,7 @@ function show() {
 	</p>
 
   <p>
-  <button id="buttonteight">
+  <button id="buttoneight">
   Submit
 </button>
 </p>
@@ -310,21 +310,17 @@ function show() {
 					<p>
     9.Which social media has more users?
 </p>
-<p>
-	<label>
-	<label><input type="radio" name="answer" value="Facebook" id="correctnine"></label><br>
-	Facebook
-	</label>
-</p>
-<p>
-	<label>
-	<label><input type="radio" name="answer" value="Youtube"></label><br>
-	Youtube
-	</label>
+<select id="answer9">
+		<option value="Facebook">Facebook</option>
+		<option value="Youtube">Youtube</option>
+		<option value="Instagram">instagram</option>
+		<option value="Snapchat">Snapchat</option>	
+		<option value="Twitter">Twitter</option>
+	</select>
 	</p>
 
   <p>
-  <button id="buttontnine">
+  <button id="buttonnine">
   Submit
 </button>
 </p>
@@ -334,7 +330,7 @@ function show() {
   function qninemark ()
   {
   commentnine.textContent = "Wrong! better luck next time!";
-  if (correctnine.checked) 
+  if (answer9.value =="Facebook") 
 	{
   commentnine.textContent = "Correct! Well Done!"
   totalscore.textContent = Number(totalscore.textContent) + 1;	
