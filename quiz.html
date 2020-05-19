@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <Head>
-Computer sience quiz 2
+Computer sience quiz 3
 </head>
 <body>
 <h1>Computer Sience Quiz</h1>
@@ -205,7 +205,7 @@ Computer sience quiz 2
 	
 			<p>
     6. In which year was the internet invented??
-<label>Year: <input id="q6range" type="range" min="1975" max="1985"></label>
+				<label>Year: <input id="q6range" type="range" min="1975" max="1985"></label>  <p id="showanswer">...</p>
 
 	</p>
 
@@ -217,17 +217,25 @@ Computer sience quiz 2
 <br>
 <p id="commentsix">.... </p>
   <Script>
+	
+function show() {
+  showanswer.textContent = q6range.value;
+}
+
+q6range.oninput = showanswer;
+ 
+	  
   function qsixmark ()
   {
   commentsix.textContent = "Wrong! better luck next time!";
-  if (q6range.value==1983) 
+  if (q6range.value== "1983") 
 	{
   commentsix.textContent = "Correct! Well Done!"
   totalscore.textContent = Number(totalscore.textContent) + 1;
 	}
   }
   buttonsix.onclick = qsixmark
-
+  q6range.oninput = showanswer;
 </script>
 
 	
