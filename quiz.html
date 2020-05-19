@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <Head>
-Computer sience quiz 7
+Computer sience quiz 8
 </head>
 <body>
 <h1>Computer Sience Quiz</h1>
@@ -120,19 +120,15 @@ Computer sience quiz 7
 		<p>
     4. Which country owns the most powerful super computer?
 </p>
-<p>
-	<label>
-	<label><input type="radio" name="answer" value="China" ></label><br>
-	China
-	</label>
-</p>
-<p>
-	<label>
-	<label><input type="radio" name="answer" value="USA" id="correctfour"></label><br>
-	USA
-	</label>
-	</p>
 
+<select id="answer4">
+		<option value="UK">UK</option>
+		<option value="France">France</option>
+		<option value="USA">USA</option>
+		<option value="China">China</option>	
+		<option value="India">India</option>
+		<option value="Japan">Japan</option>
+	</select>
   <p>
   <button id="buttonfour">
   Submit
@@ -144,7 +140,7 @@ Computer sience quiz 7
   function qfourmark ()
   {
   commentfour.textContent = "Wrong! better luck next time!";
-  if (correctfour.checked) 
+  if (answer4.value == "USA") 
 	{
   commentfour.textContent = "Correct! Well Done!"
   totalscore.textContent = Number(totalscore.textContent) + 1;	
