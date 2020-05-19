@@ -4,23 +4,15 @@ Computer sience quiz 6
 </head>
 <body>
 <h1>Computer Sience Quiz</h1>
-	<h4>Please only submit each answer once. Your score is shown at the bottom of the quiz</h4>
+	<h4>Please only submit each answer once and type in all lower case. Your score is shown at the bottom of the quiz</h4>
 
 <p>
     1. Is RAM Volatile?
 </p>
 <p>
-	<label>
-	<label><input type="radio" name="answer" value="yes" id="correctone"></label><br>
-	Yes
-	</label>
+	Answer:
+<input id="RAM">
 </p>
-<p>
-	<label>
-	<label><input type="radio" name="answer" value="no"></label><br>
-	no
-	</label>
-	</p>
 
   <p>
   <button id="buttonone">
@@ -34,7 +26,7 @@ Computer sience quiz 6
 	  {
   totalscore.textContent = "0"
   commentone.textContent = "Wrong! better luck next time!";
-  if (correctone.checked) 
+  if (RAM.value == yes) 
 	{
   commentone.textContent = "Correct! Well Done!"
   totalscore.textContent = Number(totalscore.textContent) + 1;
