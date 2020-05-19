@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <Head>
-Computer sience quiz
+Computer sience quiz 2
 </head>
 <body>
 <h1>Computer Sience Quiz</h1>
@@ -205,18 +205,8 @@ Computer sience quiz
 	
 			<p>
     6. In which year was the internet invented??
-</p>
-<p>
-	<label>
-	<label><input type="radio" name="answer" value="1983" id="correctsix"></label><br>
-	1983
-	</label>
-</p>
-<p>
-	<label>
-	<label><input type="radio" name="answer" value="1979"></label><br>
-	1979
-	</label>
+<label>Year: <input id="q6range" type="range" min="1975" max="1985"></label>
+
 	</p>
 
   <p>
@@ -230,7 +220,7 @@ Computer sience quiz
   function qsixmark ()
   {
   commentsix.textContent = "Wrong! better luck next time!";
-  if (correctsix.checked) 
+  if (q6range.value==1983) 
 	{
   commentsix.textContent = "Correct! Well Done!"
   totalscore.textContent = Number(totalscore.textContent) + 1;
